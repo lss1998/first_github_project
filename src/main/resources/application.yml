@@ -1,0 +1,13 @@
+server:
+    port: 9999
+    servlet:
+        context-path: /lssnb
+        session:
+            cookie:
+                http-only: true
+                secure: false
+                path: /
+    tomcat:
+        protocol-header: X-Forwarded-Proto
+        remote-ip-header: X-Forwarded-For
+        max-threads: 300
